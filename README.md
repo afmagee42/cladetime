@@ -33,7 +33,11 @@ files as they existing on this date (defaults to the current UTC datetime)
 
 > [!IMPORTANT]
 > Using `tree_as_of` for custom clade assignments is an advanced feature
-> and requires Docker.
+> and requires that you have Docker installed and that it can be run by
+> python via the `subprocess` module. If you have
+> [Docker installed](https://docs.docker.com/engine/install/) and can
+> run `docker --version` and `docker info` without sudo, you should be able
+> to use `tree_as_of`.
 
 ```python
 >>> from cladetime import CladeTime
